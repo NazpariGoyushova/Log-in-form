@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)file:///C:/Users/A/OneDrive/%C4%B0%C5%9F%20masas%C4%B1/programmer/index.html.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./icons/css/all.min.css">
+  <link rel="stylesheet" href="./icons/css/fontawesome.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+</head>
+
+<body>
+  <div class="box">
+    <h1>Login Form</h1>
+    <div class="info">
+      <div class="email">
+       <i class="fas fa-user"></i><input type="email" placeholder="E-mail">
+    </div>
+    <div class="password">
+      <i class="fas fa-key"></i><input type="password" id="password" placeholder="Password"><span id="show">Show</span>
+    </div>
+  </div>
+    <h4 class="forgot">Forgot password?</h4>
+    <button>Log in</button>
+    <h4>or log in With</h4>
+      <div class="social">
+      <div class="fb">
+        <i class="fab fa-facebook-f"></i><span id="fb">Facebook</span>
+      </div>
+      <div class="insta">
+        <i class="fab fa-instagram"></i><span id="insta">Instagram</span>
+      </div>
+       </div>
+      <h4>Don't have an account?<span><a href="#">Sign up now</a></span></h4>
+    
+
+  </div>
+   
+ 
+    
+  <script>
+   const show=document.getElementById("show");
+   const password=document.getElementById("password");
+   
+
+   show.addEventListener("click",function(){
+     const show=document.getElementById("show");
+     if(show.innerHTML==="Show"){
+       show.innerHTML="Hide";
+       password.setAttribute("type","text");
+     }
+  else{
+    show.innerHTML="Show";
+    password.setAttribute("type","password");
+  }
+   });
+  </script>
+ 
+
+
+ 
+
+
+
+
+</body></html>
